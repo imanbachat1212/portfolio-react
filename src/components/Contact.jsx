@@ -42,10 +42,10 @@ const Contact = () => {
           </p>
           <div className='list'>
             <li>
-              <a href='#home'>+96170256769</a>
+              <a href="tel:+96170256769">+96170256769</a>
             </li>
             <li>
-              <a href='#home'>iman.bachatt@gmail.com</a>
+              <a href="mailto:iman.bachatt@gmail.com">iman.bachatt@gmail.com</a>
             </li>
           </div>
 
