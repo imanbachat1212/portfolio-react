@@ -92,7 +92,7 @@ section {
     grid-template-columns: 1fr;
   }
 }
-/* @media (max-width: 840px){
+@media (max-width: 840px){
 	#menu-icon{
 		display: block;
 	}
@@ -123,4 +123,4 @@ section {
 	.navlist.open{
 		top: 100%;
 	}
-} */
+}

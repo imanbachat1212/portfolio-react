@@ -60,7 +60,7 @@ header {
       border-color: transparent;
     }
   }
-  @media (max-width: 668px){
+  /* @media (max-width: 668px){
     #menu-icon{
       display: block;
     }
@@ -92,4 +92,4 @@ header {
       top: 100%;
     }
   
-  }
+  } */
