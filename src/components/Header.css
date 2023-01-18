@@ -12,11 +12,12 @@ header {
     border-bottom: 1px solid transparent;
     transition: all 0.45s ease;
   }
-  .logo {
-    color: var(--text-color);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1px;
+
+
+.logo{
+  width: 50%;
+  height: 50%;
+  padding-right: 350px;
   }
   
   span {
@@ -48,17 +49,7 @@ header {
     margin-left: 25px;
     display: none;
   }
-  .typing-demo {
-    width: 13ch;
-    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: var(--big-font);
-    color: var(--text-color);
-    font-weight: 700;
-    margin: 0 0 8px;
-  }
+
   @keyframes typing {
     from {
       width: 0;
@@ -68,4 +59,37 @@ header {
     50% {
       border-color: transparent;
     }
+  }
+  @media (max-width: 668px){
+    #menu-icon{
+      display: block;
+    }
+    .navlist{
+      position: absolute;
+      top: -1000px;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-color);
+      text-align: left;
+      transition: all .45s ease;
+    }
+    .navlist a{
+      display: block;
+      margin: 17px;
+      font-size: 20px;
+      transition: all .45s ease;
+      color: var(--text-color);
+    }
+    .navlist a:hover{
+      color: var(--main-color);
+    }
+    .navlist a.active{
+      color: var(--text-color);
+    }
+    .navlist.open{
+      top: 100%;
+    }
+  
   }

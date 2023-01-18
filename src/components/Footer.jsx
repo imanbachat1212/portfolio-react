@@ -4,15 +4,14 @@ import './Footer.css'
 const Footer = () => {
   return (
    <>
-    <section class="end">
-      <div class="last-text">
+    <section className="end">
+      <div className="last-text">
         <p>
-          <i class="bx bx-code-alt"></i> with ❤ by Iman Bachat © 2023<br />Built
-          with pure HTML, CSS and JavaScript
+          <i className="bx bx-code-alt"></i> with ❤ by Iman Bachat © 2023
         </p>
       </div>
-      <div class="top">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      <div className="top">
+        <a href="#home"><i className="bx bx-up-arrow-alt"></i></a>
       </div>
     </section>
 
