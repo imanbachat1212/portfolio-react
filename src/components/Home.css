@@ -36,7 +36,7 @@
 }
 .typing-demo {
   width: 13ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -117,6 +117,8 @@
   .typing-demo {
     font-weight: 500;
     font-size: 40px;
+    width: 12ch;
+    animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
   }
   .home-text h3 {
     font-size: 1rem;

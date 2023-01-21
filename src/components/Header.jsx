@@ -1,7 +1,12 @@
 import React from 'react'
+import { useState } from 'react'
 import './Header.css'
 
 const Header = () => {
+  const [menuopen,setMenuOpen]=useState(false);
+  const toggleMenu=()=>{
+    setMenuOpen(!menuopen)
+  }
   return (
     <>
       <header>
@@ -15,7 +20,7 @@ const Header = () => {
           <li><a href="#contact">Contact Me</a></li>
         </ul>
 
-        <div className="bx bx-menu" id="menu-icon"></div>
+        <div className="bx bx-menu" id="menu-icon" onClick={toggleMenu}></div>
 
 
 
