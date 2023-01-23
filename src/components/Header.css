@@ -1,159 +1,153 @@
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    /* padding: 22px 15%; */
-    border-bottom: 1px solid transparent;
-    transition: all 0.45s ease;
-  }
-  header.sticky{
-    padding: 12px 2.5%;
-    transition: .1s;
-  }
- 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  /* padding: 22px 15%; */
+  border-bottom: 1px solid transparent;
+  transition: all 0.45s ease;
+}
+header.sticky {
+  padding: 12px 2.5%;
+  transition: 0.1s;
+}
 
-
-.logo{
+.logo {
   width: 50%;
   height: 50%;
   padding-right: 350px;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: var(--second-color);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 25px;
+  transition: all 0.45s ease;
+}
+.navlist a:hover {
+  color: var(--main-color);
+}
+.navlist a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  span {
-    color: var(--main-color);
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  
+}
+@media (max-width: 668px) {
+  .bx-menu {
+    padding-right: 20%;
+    /* display: fixed; */
+  }
+  .logo {
+    width: 40%;
+    height: 40%;
+
+    padding-top: 10px;
+  }
+  #menu-icon {
+    display: block;
+  }
   .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
     display: flex;
-  }
-  .navlist a {
-    color: var(--second-color);
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 25px;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
     transition: all 0.45s ease;
+  }
+
+  .navlist a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.45s ease;
+    color: var(--text-color);
   }
   .navlist a:hover {
     color: var(--main-color);
   }
   .navlist a.active {
+    color: var(--text-color);
+  }
+  .navlist.open {
+    top: 100%;
+  }
+  header.sticky {
+    padding: 10px 2.5%;
+    transition: 0.1s;
+  }
+}
+@media (max-width: 844px) {
+  #menu-icon {
+    display: block;
+  }
+  .logo {
+    width: 70%;
+    height: 70%;
+    padding-right: 120px;
+  }
+  .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    transition: all 0.45s ease;
+  }
+  .navlist a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.45s ease;
+    color: var(--text-color);
+  }
+  .navlist a:hover {
     color: var(--main-color);
   }
-  
-  #menu-icon {
-    font-size: 35px;
+  .navlist a.active {
     color: var(--text-color);
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
-    display: none;
   }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
+  .navlist.open {
+    top: 100%;
   }
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @media (max-width: 668px){
-  
-    .bx-menu{
-      padding-right: 10%;
-      display: fixed;
-
-    }
-    .logo{
-      width: 50%;
-      height: 50%;
-      padding-top: 10px;
-      }
-      #menu-icon{
-        display: block;
-      }
-      .navlist{
-        position: absolute;
-        top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
-        transition: all .45s ease;
-      }
-      
-      .navlist a{
-        display: block;
-        margin: 17px;
-        font-size: 20px;
-        transition: all .45s ease;
-        color: var(--text-color);
-      }
-      .navlist a:hover{
-        color: var(--main-color);
-      }
-      .navlist a.active{
-        color: var(--text-color);
-      }
-      .navlist.open{
-        top: 100%;
-      }
-      header.sticky{
-        padding: 10px 2.5%;
-        transition: .1s;;
-      }
-
-   
-  
-  }
-  @media (max-width: 844px){
-    #menu-icon{
-      display: block;
-    }
-    .logo{
-      width: 50%;
-      height: 50%;
-      padding-right: 3px;
-      }
-    .navlist{
-      position: absolute;
-      top: -1000px;
-      right: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      background: var(--bg-color);
-      text-align: left;
-      transition: all .45s ease;
-    }
-    .navlist a{
-      display: block;
-      margin: 17px;
-      font-size: 20px;
-      transition: all .45s ease;
-      color: var(--text-color);
-    }
-    .navlist a:hover{
-      color: var(--main-color);
-    }
-    .navlist a.active{
-      color: var(--text-color);
-    }
-    .navlist.open{
-      top: 100%;
-    }
-  }
-  /* @media (max-width:1480px){
+}
+@media (max-width:1480px){
     header{
       padding: 12px 2.5%;
       transition: .1s;
@@ -161,4 +155,44 @@ header {
     header.sticky{
       padding: 12px 2.5%;
       transition: .1s;
-    }} */
+    }}
+
+@media only screen and (max-width: 1024px) {
+  #menu-icon {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .navlist {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--bg-color);
+    transition: 1s;
+    transform: translateY(-100vh);
+    /* text-align: left; */
+    transition: all 0.45s ease;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  /* header .navlist li a .bx-x {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transform: none;
+  } */
+ /* header .navlist.active{
+  left: -50px;
+ } */
+}

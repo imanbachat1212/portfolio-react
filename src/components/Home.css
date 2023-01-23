@@ -111,6 +111,7 @@
 
     /* background-position: 50%; */
     padding-top: 10px;
+    padding-left: 10px;
 
   }
 
@@ -124,7 +125,9 @@
     font-size: 1rem;
   }
 
-
+.button{
+  margin-bottom: -70px;
+}
   .btn {
     padding: 5px 5px;
     font-size: 1rem;
@@ -149,3 +152,5 @@
   }
 
 }
+
+
