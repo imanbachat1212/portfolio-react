@@ -3,7 +3,13 @@ import './Contact.css'
 import emailjs from 'emailjs-com'
 
 
+
 const Contact = () => {
+
+  
+ 
+
+
 
   const form = useRef();
   // const theRef=useRef(null)
@@ -55,13 +61,13 @@ const Contact = () => {
             <a href='https://www.facebook.com/bachat'>
               <i className='bx bxl-facebook'></i>
             </a>
-            <a href='https://www.linkedin.com'>
+            <a href='https://www.linkedin.com/in/iman-bachat-65128b243/'>
               <i className='bx bxl-linkedin'></i>
             </a>
             <a href='https://twitter.com'>
               <i className='bx bxl-twitter'></i>
             </a>
-            <a href='https://github.com'>
+            <a href='https://github.com/imanbachat1212'>
               <i className='bx bxl-github'></i>
             </a>
           </div>
@@ -75,12 +81,14 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <input
               name="user_name"
+              id='name'
               type='text'
               placeholder='Your name'
               required
             />
             <input
               type='email'
+              id='email'
               name="user_email"
               placeholder='Your Email Address'
               required
@@ -93,7 +101,8 @@ const Contact = () => {
               placeholder='How Can I Help You '
               required
             ></textarea>
-             <input type="submit" value="Send Message" className="submit" required />
+             <input type="submit" value="Send Message" className="submit"   required />
+            
            
           </form>
         </div>
