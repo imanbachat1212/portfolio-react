@@ -17,6 +17,13 @@ const Work = () => {
               <a href="https://sage-squirrel-9e1f3e.netlify.app"><i className='bx bx-link-external' ></i></a>
             </div>
           </div>
+          <div className="row">
+            <img src={require('../images/weather.PNG')} alt=''/>
+            <div className="layer">
+              <h5>Weather App</h5>
+              <a href="https://cityweatherr.netlify.app/"><i className='bx bx-link-external' ></i></a>
+            </div>
+          </div>
       </div>
     </section>
    </>

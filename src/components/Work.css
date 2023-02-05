@@ -13,6 +13,9 @@
 .work-content {
   display: grid;
   gap: 2rem 4rem;
+  
+
+
 }
 
 .row {
@@ -20,6 +23,9 @@
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  
+
+ 
 }
 .row img {
   width: 30%;
