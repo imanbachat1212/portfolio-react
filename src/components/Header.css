@@ -8,7 +8,6 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  /* padding: 22px 15%; */
   border-bottom: 1px solid transparent;
   transition: all 0.45s ease;
 }
@@ -18,9 +17,9 @@ header.sticky {
 }
 
 .logo {
-  width: 50%;
-  height: 50%;
-  padding-right: 350px;
+  width: 70%;
+  height: 70%;
+  padding-left: 15%;
 }
 
 span {
@@ -29,6 +28,8 @@ span {
 
 .navlist {
   display: flex;
+  padding-left: 5px;
+
 }
 .navlist a {
   color: var(--second-color);
@@ -66,7 +67,6 @@ span {
 @media (max-width: 668px) {
   .bx-menu {
     padding-right: 20%;
-    /* display: fixed; */
   }
   .logo {
     width: 40%;
@@ -193,7 +193,5 @@ span {
     right: 2rem;
    
   }
- /* header .navlist.active{
-  left: -1px;
- } */
+
 }
