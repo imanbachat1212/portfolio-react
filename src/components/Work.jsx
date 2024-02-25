@@ -31,6 +31,13 @@ const Work = () => {
               <a href="https://exotic-places.netlify.app/"><i className='bx bx-link-external' ></i></a>
             </div>
           </div>
+             <div className="row">
+            <img src={require('../images/ruia.PNG')} alt='' />
+            <div className="layer">
+              <h5 className='description'>Gender & Inclusion Consulting Services Website</h5>
+              <a href="https://www.ruiasolutions.com/"><i className='bx bx-link-external' ></i></a>
+            </div>
+          </div>
         </div>
       </section>
     </>
