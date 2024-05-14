@@ -32,7 +32,7 @@ const Work = () => {
             </div>
           </div>
              <div className="row">
-            <img src={require('../images/ruia.PNG')} alt='' />
+            <img src={require('../images/farah.PNG')} alt='' />
             <div className="layer">
               <h5 className='description'>Gender & Inclusion Consulting Services Website</h5>
               <a href="https://www.farahsalhab.com/"><i className='bx bx-link-external' ></i></a>
