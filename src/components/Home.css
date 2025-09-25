@@ -2,7 +2,7 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/profile.png);
+  /* background-image: url(../images/profile.png); */
   background-size: cover;
   background-size: contain;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-size: var(--big-font);
+  font-size: var(--h2-font);
   color: var(--text-color);
   font-weight: 700;
   margin: 0 0 8px;
@@ -48,8 +48,8 @@
 .home-text h3 {
   color: var(--text-color);
   margin: 0 0 35px;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 1.1;
 }
 .home-text p {
@@ -108,11 +108,9 @@
 
 @media (max-width: 668px) {
   .home {
-
     /* background-position: 50%; */
     padding-top: 10px;
     padding-left: 10px;
-
   }
 
   .typing-demo {
@@ -125,9 +123,9 @@
     font-size: 1rem;
   }
 
-.button{
-  margin-bottom: -70px;
-}
+  .button {
+    margin-bottom: -70px;
+  }
   .btn {
     padding: 5px 5px;
     font-size: 1rem;
@@ -147,10 +145,5 @@
     height: 45px;
     width: 45px;
     font-size: 35px;
-  
-    
   }
-
 }
-
-
