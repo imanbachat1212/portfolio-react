@@ -6,7 +6,7 @@ const Skill = () => {
     <>
       <section className="skill" id="skill">
         <div className="main-text">
-          <h2>
+          <h2 id="skill-title">
             <span>My</span> Skills
           </h2>
         </div>

@@ -1,31 +1,35 @@
-.skill{
-    background: var(--second-bg-color);
-  
-  }
-  .skill h2{
-    margin-bottom: 50px;
-  }
-  .skill-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-   
-   
-  }
-  
-  .rows{
-     margin-bottom: 1rem;
-      padding: 0.75rem;
-      line-height: 2rem;
-      box-shadow: 0 0 5px rgb(121 121 121 / 15%);
-      transition: all .2s ease-in-out;
-      display: flex;
-      justify-content: space-between;  
-      width:25%;
-      background-color: #2a2a2a;
-      flex: 30%;
-      
-    }
-    
+.skill {
+  background: var(--second-bg-color);
+}
+.skill-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#skill-title {
+  margin-bottom: 24px;
+}
+
+.rows {
+  flex: 1 1 calc(25% - 16px);
+  box-shadow: 0 0 5px rgb(121 121 121 / 15%);
+  background-color: #2a2a2a;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .rows {
+    flex: 1 1 calc(33.333% - 16px);
+  } /* 3 per row */
+}
+@media (max-width: 768px) {
+  .rows {
+    flex: 1 1 calc(50% - 16px);
+  } /* 2 per row */
+}
+@media (max-width: 380px) {
+  .rows {
+    flex: 1 1 calc(50% - 12px);
+  } /* still 2 per row on very small */
+}

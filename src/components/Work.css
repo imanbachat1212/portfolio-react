@@ -99,17 +99,15 @@
     margin-bottom: 15px;
   }
   .main-text h2 {
-    font-size: 50px;
     margin-bottom: 50px;
   }
 
   .row img {
-    width: 50%;
     border-radius: 8px;
   }
 
   .layer {
-    width: 51%;
+    width: 100%;
   }
   .layer h5 {
     font-size: 10px;

@@ -15,9 +15,9 @@
 }
 .about-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  align-items: center;
-  gap: 2.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* desktop/tablet */
+  gap: 2rem;
+  align-items: stretch;
   margin-top: 5rem;
 }
 
@@ -27,7 +27,10 @@
   border-radius: 8px;
   transition: all 0.45s ease;
   height: 25rem;
+  display: flex;
+  flex-direction: column;
 }
+
 .s-icons i {
   font-size: 32px;
   margin-bottom: 20px;
@@ -50,19 +53,41 @@
   cursor: pointer;
 }
 @media (max-width: 668px) {
-  .main-text h2 {
-    font-size: 1px;
-    font-weight: 200;
-    line-height: 1;
+  #about-title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
   }
-  .about-content {
-    gap: 1.5rem;
-    margin-top: 3rem;
+}
+
+@media (max-width: 668px) {
+  #about-title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
   }
 
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+  } /* 2 x 2 */
   .box {
-    padding: 25px 45px;
-    border-radius: 10px;
-    height: 25rem;
+    height: 20rem;
+  } /* same height for ALL cards on phones */
+  .s-icons i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .box h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .box p {
+    font-size: 13px;
+    line-height: 1.6;
+    /* keep text from making one card taller than the others */
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
