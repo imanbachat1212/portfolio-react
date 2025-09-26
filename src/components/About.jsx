@@ -24,6 +24,28 @@ const About = () => {
               great, work fast and perform well with a seamless user experience.
             </p>
           </div>
+          <div className="box" data-aos="flip-right">
+            <div className="s-icons">
+              <i className="bx bx-line-chart"></i>
+            </div>
+            <h3>SEO & Content Strategy</h3>
+            <p>
+              Keyword research, on-page SEO, performance optimization, and
+              schema markup to grow qualified organic traffic and leads.
+            </p>
+          </div>
+
+          {/* Business Strategy */}
+          <div className="box" data-aos="flip-right">
+            <div className="s-icons">
+              <i className="bx bx-target-lock"></i>
+            </div>
+            <h3>Business Strategy</h3>
+            <p>
+              Align your website with revenue goals—funnels, offers, analytics,
+              and CRO to turn visitors into customers.
+            </p>
+          </div>
 
           <div className="box" data-aos="flip-right">
             <div className="s-icons">
@@ -54,29 +76,6 @@ const About = () => {
             <h3>MERN stack Development</h3>
             <p>
               Designed, developed and modified web Apps with MERN technologies.
-            </p>
-          </div>
-
-          <div className="box" data-aos="flip-right">
-            <div className="s-icons">
-              <i className="bx bx-line-chart"></i>
-            </div>
-            <h3>SEO & Content Strategy</h3>
-            <p>
-              Keyword research, on-page SEO, performance optimization, and
-              schema markup to grow qualified organic traffic and leads.
-            </p>
-          </div>
-
-          {/* Business Strategy */}
-          <div className="box" data-aos="flip-right">
-            <div className="s-icons">
-              <i className="bx bx-target-lock"></i>
-            </div>
-            <h3>Business Strategy</h3>
-            <p>
-              Align your website with revenue goals—funnels, offers, analytics,
-              and CRO to turn visitors into customers.
             </p>
           </div>
         </div>

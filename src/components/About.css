@@ -52,13 +52,6 @@
   transform: translateY(-8px);
   cursor: pointer;
 }
-@media (max-width: 668px) {
-  #about-title {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-}
 
 @media (max-width: 668px) {
   #about-title {
@@ -69,25 +62,23 @@
 
   .about-content {
     grid-template-columns: repeat(2, 1fr);
+    margin-left: -30px;
   } /* 2 x 2 */
   .box {
     height: 20rem;
+    padding: 10px;
+    gap: 1px;
   } /* same height for ALL cards on phones */
   .s-icons i {
     font-size: 24px;
     margin-bottom: 10px;
   }
   .box h3 {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 8px;
   }
   .box p {
     font-size: 13px;
-    line-height: 1.6;
-    /* keep text from making one card taller than the others */
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    line-height: 1.4;
   }
 }
